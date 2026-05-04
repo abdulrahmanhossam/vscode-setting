@@ -1,0 +1,95 @@
+{
+// --- UI & Font Settings ---
+"editor.fontLigatures": true,
+"editor.fontSize": 17.6,
+"editor.lineHeight": 1.4,
+"editor.cursorSmoothCaretAnimation": "on",
+"editor.cursorBlinking": "solid",
+"editor.minimap.enabled": false,
+"editor.stickyScroll.enabled": false,
+"window.zoomLevel": 0.5,
+"workbench.iconTheme": "material-icon-theme",
+"workbench.editor.labelFormat": "short",
+"editor.lineNumbers": "relative",
+"editor.cursorStyle": "block",
+"workbench.statusBar.visible": false,
+"breadcrumbs.enabled": false,
+//"window.menuBarVisibility": "toggle",
+"editor.guides.indentation": false,
+"editor.renderLineHighlight": "none",
+"editor.padding.top": 24,
+// --- General Formatting & Saving ---
+"editor.formatOnSave": true,
+"editor.formatOnType": false,
+"editor.formatOnPaste": true,
+"editor.autoIndent": "full",
+"files.autoSave": "onFocusChange",
+// --- Default Indentation (C# & General) ---
+"editor.detectIndentation": false,
+"editor.tabSize": 4,
+"editor.insertSpaces": true,
+// --- Language Specific: C# ---
+"[csharp]": {
+"editor.defaultFormatter": "ms-dotnettools.csharp"
+},
+"editor.codeActionsOnSave": {
+"source.organizeImports": "explicit",
+"source.fixAll": "explicit"
+},
+"csharp.debug.console": "integratedTerminal",
+"csharp.debug.justMyCode": true,
+"csharp.enableImportCompletion": true,
+"csharp.experimental.debug.hotReload": true,
+"dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+// --- Language Specific: Go (CRITICAL FOR GO) ---
+"[go]": {
+"editor.insertSpaces": false, // Go STRICTLY uses Tabs, not spaces
+"editor.formatOnSave": true,
+"editor.defaultFormatter": "golang.go"
+},
+// --- Language Specific: C/C++ (From your previous config) ---
+"[c]": {
+"editor.defaultFormatter": "ms-vscode.cpptools"
+},
+"[cpp]": {
+"editor.defaultFormatter": "ms-vscode.cpptools"
+},
+"C_Cpp.formatting": "vcFormat",
+"C_Cpp.vcFormat.indent.braces": false,
+"C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
+"C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+"C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "sameLine",
+"C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
+"C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
+"C_Cpp.vcFormat.newLine.beforeCatch": false,
+"C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": false,
+// --- Terminal & Git ---
+"terminal.integrated.fontSize": 14.5,
+"terminal.integrated.cursorBlinking": true,
+"git.autofetch": true,
+// --- Files & Exclusions ---
+"files.exclude": {
+"**/.vs": true,
+"**/bin": true,
+"**/obj": true,
+"**/.git": true,
+"**/.DS_Store": true
+},
+"files.associations": {
+"appsettings*.json": "jsonc"
+},
+// --- Misc & Extensions ---
+"editor.smartSelect.selectLeadingAndTrailingWhitespace": false,
+"chat.viewSessions.orientation": "stacked",
+"github.copilot.enable": {
+"*": false,
+"plaintext": true,
+"csharp": false
+},
+"workbench.colorTheme": "Gruvbox Dark Hard",
+"workbench.colorCustomizations": {
+"editorCursor.foreground": "#fabd2f",
+"editorLineNumber.activeForeground": "#fabd2f",
+"editorLineNumber.foreground": "#a89984"
+}
+}
